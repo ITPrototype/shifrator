@@ -1,0 +1,10 @@
+.form{
+    width: 200px;
+}
+.form input{
+    width: 100%;
+}
+.subBtn{
+    float: right;
+    margin-top: 5px;
+}
