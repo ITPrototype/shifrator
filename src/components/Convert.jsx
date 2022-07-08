@@ -60,7 +60,7 @@ export default function Convert() {
                 <button type='submit'>Submit</button>
             </form>
             <div>
-                Founded word(if not showing wait 5-10sec or try 2-3 times): {found}
+                Founded word(if not showing wait 15sec,refresh page and retry): {found}
             </div>
         </div>
     )
