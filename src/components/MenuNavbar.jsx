@@ -14,13 +14,14 @@ export default function MenuNavbar() {
 
   }, [auth])
   return (
-    <div className='navbar'>
-      <ul>
+    <div className='menuTop'>
+      <ul className='d-flex justify-content-between align-items-center'>
         <li>
           <Link to="/">Home</Link>
         </li>
-        {!auth ? <span><li><Link to="/login">Login</Link></li><li><Link to="register">Register</Link></li></span> : <button onClick={logout}>Logout</button> }
+        {!auth ? <span id='logreg' className='d-flex flex-row justify-content-between'><li><Link to="/login">Login</Link></li><li><Link to="register">Register</Link></li></span> : <button onClick={logout} className="btn btn-danger">Logout</button> }
       </ul>
+      <hr />
     </div>
   )
 }

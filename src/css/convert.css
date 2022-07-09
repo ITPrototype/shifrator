@@ -1,0 +1,17 @@
+.cont-convert{
+    width: 500px;
+    margin: 0 auto;
+}
+.btn{
+    float: right;
+    margin-top: 10px;
+}
+.getword{
+    margin-top: 40px;
+}
+@media screen and (max-width:992px) {
+    .cont-convert{
+        width: 100%;
+        padding: 10px;
+    }
+}
