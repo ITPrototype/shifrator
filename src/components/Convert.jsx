@@ -45,6 +45,7 @@ export default function Convert() {
     return (
         <div>
             <h4>Welcome to secret code converter</h4>
+            <h6>Enter your word and get code send this code to friend and with code he can read your secret word</h6>
             <form onSubmit={getCode}>
                 <label htmlFor="code">Enter your word</label><br />
                 <input type="text" value={word} onChange={(e) => setWord(e.target.value)} name='code' aria-required />
@@ -59,7 +60,7 @@ export default function Convert() {
                 <button type='submit'>Submit</button>
             </form>
             <div>
-                Founded word: {found}
+                Founded word(if not showing wait 15sec,refresh page and retry): {found}
             </div>
         </div>
     )
