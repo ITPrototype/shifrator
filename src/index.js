@@ -7,13 +7,13 @@ import firebase from 'firebase/compat/app'
 
 
 firebase.initializeApp({
-  apiKey: "AIzaSyCQd3z5Mf2H9jqz_L4JV7rlKlQOYno5UCI",
-  authDomain: "auth-app-test-d247f.firebaseapp.com",
-  projectId: "auth-app-test-d247f",
-  storageBucket: "auth-app-test-d247f.appspot.com",
-  messagingSenderId: "1075672601907",
-  appId: "1:1075672601907:web:9ed669af445a76a8cb9a46",
-  measurementId: "G-J3YGM04XLY"
+  apiKey: "AIzaSyDtERXM_qc7PigkF9ZLTfWHkmXsu2gEdNA",
+  authDomain: "fb-auth-secret-chat.firebaseapp.com",
+  projectId: "fb-auth-secret-chat",
+  storageBucket: "fb-auth-secret-chat.appspot.com",
+  messagingSenderId: "606924560335",
+  appId: "1:606924560335:web:2e14ad9605a913886d24ba",
+  measurementId: "G-SEPC9WH85M"
 });
 
 

@@ -13,7 +13,7 @@ export default function Convert() {
     const [found, setFound] = useState('')
     const [mes,setMes] = useState('')
     const [messages, loading] = useCollectionData(
-        firebase.firestore().collection('messages')
+        firebase.firestore().collection('secretcode')
     )
     if (loading) {
         return 'loading'
@@ -24,7 +24,7 @@ export default function Convert() {
             alert('Empty field')
         } else {
             setConCode(uuidv4())
-            firebase.firestore().collection('messages').add({
+            firebase.firestore().collection('secretcode').add({
                 word: word, conCode: conCode
             })
             alert(`Your code : ${conCode} copy and save it!`)
