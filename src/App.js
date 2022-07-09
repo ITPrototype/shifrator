@@ -10,7 +10,7 @@ import {
   createUserWithEmailAndPassword
 } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
-
+import Swal from 'sweetalert2';
 
 function App() {
   let navigate = useNavigate()
@@ -20,7 +20,12 @@ function App() {
   const handleAction = (id) => {
     const authentication = getAuth();
     if (email === '' && password === '') {
-      alert('Empty field')
+      Swal.fire({
+        title:'Error',
+        text:'Empty field!',
+        icon:'error',
+        confirmButtonText:'Ok'
+      })
     } else {
 
 
@@ -32,7 +37,12 @@ function App() {
               localStorage.setItem('Auth Token', response._tokenResponse.refreshToken)
             })
             .catch((err) => {
-              alert(err.message);
+              Swal.fire({
+                title:'Error',
+                text:`${err.message}`,
+                icon:'error',
+                confirmButtonText:'Ok'
+              })
             })
         }
         if (id === 1) {
@@ -42,7 +52,12 @@ function App() {
               localStorage.setItem('Auth Token', response._tokenResponse.refreshToken)
             })
             .catch((err) => {
-              alert(err.message)
+              Swal.fire({
+                title:'Error',
+                text:`${err.message}`,
+                icon:'error',
+                confirmButtonText:'Ok'
+              })
             })
         }
       } else {

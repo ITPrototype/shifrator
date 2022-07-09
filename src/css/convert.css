@@ -14,4 +14,7 @@
         width: 100%;
         padding: 10px;
     }
+    .menuTop ul{
+        align-items: center;
+    }
 }

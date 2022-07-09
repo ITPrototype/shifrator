@@ -8,6 +8,7 @@ import Swal from 'sweetalert2'
 import Loader from '../components/Loader'
 import '../css/convert.css'
 
+
 export default function Convert() {
     const [word, setWord] = useState('')
     const [conCode, setConCode] = useState(uuidv4())
@@ -23,7 +24,12 @@ export default function Convert() {
     const getCode = e => {
         e.preventDefault()
         if (word === '') {
-            alert('Empty field')
+            Swal.fire({
+                title:'Error',
+                text:'Empty field',
+                icon:'error',
+                confirmButtonText:'Okay'
+            })
         } else {
             setConCode(uuidv4())
             firebase.firestore().collection('secretcode').add({
